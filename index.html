@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Style Guide George Lin</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <section class="navbar1">
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="product.html">Product Listing</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Contents</a>
+        <div class="dropdown-content">
+          <a href="#idea">Branding Idea</a>
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="#components">Brand Components</a>
+          <a href="#citations">Citations</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="content">
+
+    <header>
+      <h2>P01 - Style Guide George Lin</h2>
+    </header>
+    <!-- Navigation links -->
+    <nav>
+      <a href="#idea">Branding Idea</a>
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text Elements</a>
+      <a href="#combined_elements">Combined Elements</a>
+      <a href="#components">Brand Components</a>
+      <a href="#citations">Citations</a>
+    </nav>
+
+    <!-- BRANDING IDEA SECTION -->
+    <section id="idea">
+      <h2> Branding Idea </h2>
+      <b><p>What does the company do, or offer?</p></b>
+      <p>
+        Magpul Industries Corporation is an American designer and manufacturer of
+        high-tech polymer and compositre firearms accessories. It is founded in 1999 with
+        the intent of developing a simple device to aid in the manipulation of rifle magazines while
+        reloading under stress.
+      </p>
+
+      <b><p>Who is the company to potential customers? (as a person)</p></b>
+      <p>
+        The targeted customers are the military, police forces, private security, and professional gun owners.
+      </p>
+
+      <b><p>Why might this company entice someone to purchase a product or service</p></b>
+      <p>
+        Magpul is known for its creative design solutions, the simplicity and uniqueness of the design of
+        its product provide an aesthetic look to their tactical gears and with efficient quality and performance.
+      </p>
+
+    </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <!-- In-text Link -->
+      <section class="element">
+        <h3>In-text link</h3>
+        <a href="css/main.css">This is a link</a>
+      </section>
+
+      <!-- Default Button styling section -->
+
+      <!-- Navigation Link -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Button</a>
+
+      </section>
+
+
+      <!-- Submit/ Reset Buttons -->
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <form action="/button-type">
+          <button class="button button3">Reset!</button>
+          <!-- <button type="reset">Reset!</button><br> -->
+          <br>
+          <button class="button button3">Submit</button>
+          <!-- <button type="submit" disabled> Submit</button> -->
+        </form>
+      </section>
+
+      <!-- Text input -->
+      <section class="element">
+        <form>
+          <fieldset class="info">
+            <label for="input">This is a label for text input</label>
+            <input class="text_box" id="input" type="text">
+          </fieldset>
+        </form>
+      </section>
+
+
+      <!-- Radio Button with Label -->
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <label class="radio">Choice 1
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio">Choice 2
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+
+
+        <!-- Image as a Link -->
+        <section class="element2">
+          <h3>Image as a Link</h3>
+          <a href="https://www.magpul.com/"><img src="img/logo.png"></a>
+        </section>
+
+
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+
+        <!-- Headings -->
+        <section class="element">
+          <h3>Headings</h3>
+          <section class="header">
+            <!--Four levels of heading // -->
+            <h1>This is Header level 1</h1>
+            <h2>This is Header level 2</h2>
+            <h3>This is Header level 3</h3>
+            <h4>This is Header level 4</h4>
+          </section>
+        </section>
+
+        <!-- Paragraphs -->
+        <section class="element">
+          <h3>Paragraphs</h3>
+
+          <p>This is a paragraph</p>
+          <p>This is another paragraph.
+            <span>And here is a span</span></p>
+          </section>
+
+          <!-- Numbered Lists -->
+          <section class="element">
+            <h3>Numbered Lists</h3>
+
+            <ol>
+              <li>Item 1 for ordered list</li>
+              <li>Item 2 for ordered list</li>
+            </ol>
+
+          </section>
+
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+          <h2>Combined Elements</h2>
+
+          <section class="element">
+            <h3>Main Navigation</h3>
+
+            <section class="navbar">
+              <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">Featured</a></li>
+                <li><a href="#contact">Products</a></li>
+                <li><a href="#about">About Magpul</a></li>
+              </ul>
+            </section>
+          </section>
+
+          <!-- Product/Service Listing -->
+          <section class="element">
+            <h3>Product/Service Listing</h3>
+
+            <div class="card">
+              <img src="img/item1.png" alt="phone case" style="width:100%">
+              <h1>Magpul® Bump Case – iPhone® X/Xs</h1>
+              <p class="price">$26.95</p>
+              <p>The legendary protection that Magpul iPhone Bump Case owners enjoy
+                is now available for the iPhone X and Xs.</p>
+                <p><a href="css/main.css">Click for more details</a></p>
+                <p><button>Add to Cart</button></p>
+              </div>
+
+            </section>
+
+            <!-- Payment Form -->
+            <section class="element">
+              <h3>Payment Form</h3>
+
+              <div class="container">
+                <form action="/action_page.php">
+                  First name:<br>
+                  <input type="text" name="firstname" value="Geo"><br><br>
+                  Last name:<br>
+                  <input type="text" name="lastname" value="Lin"><br><br>
+                  Email:<br>
+                  <input type="text" name="email" value="geo@gmail.com"><br><br>
+                  Address:<br>
+                  <input type="text" name="address" value="123 Funny Street"><br><br>
+                  City:<br>
+                  <input type="text" name="city" value="Vancouver"><br><br>
+                  Credit Card Number:<br>
+                  <input type="text" name="ccnumber" value="000000000000"><br><br>
+
+                  Gender:<br>
+                  <label class="radio">Male
+                    <input type="radio" checked="checked" name="gender" value="male" checked>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio">Female
+                    <input type="radio" name="gender" value="female">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio">Other
+                    <input type="radio" name="gender" value="other">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <button class="button button3">Submit</button>
+                </form>
+              </div>
+            </section>
+
+            <!-- Checkout Cart -->
+            <section class="element">
+              <h3>Checkout Cart</h3>
+
+              <div class="col-25">
+                <div class="container">
+                  <h4>Cart
+                    <span class="price" style="color:black">
+                      <i class="fa fa-shopping-cart"></i>
+                      <b>2</b>
+
+                    </span>
+                  </h4>
+                  <br>
+                  <p>
+                    <img src="img/item2.png" alt="gloves" style="width:10%">
+                    <a href="#">Magpul Core™ Flight Gloves</a> <span class="price">$15</span></p>
+                    <p>
+                      <img src="img/item1.png" alt="phone case" style="width:10%">
+                      <a href="#">Magpul® Bump Case – iPhone® X/Xs</a> <span class="price">$5</span></p>
+
+                      <hr>
+                      <p>Total <span class="price" style="color:black"><b>$20</b></span></p>
+
+                      <button class="button button3">Submit</button>
+                    </div>
+                  </div>
+
+                </section>
+
+              </section>
+
+              <!-- // BRAND COMPONENTS -->
+              <section id="components">
+                <h2>Brand Components</h2>
+
+                <section class="element">
+                  <h3>Fonts</h3>
+                  <section class="header">
+                    <h1>Oswald</h1>
+                  </section>
+                </section>
+
+                <section class="element">
+                  <h3>Colour palettes</h3>
+                  <!-- <h1 style="background-color:#ad1d1d;">#ad1d1d</h1>
+                  <h1 style="background-color:#92ad7b;">#92ad7b</h1>
+                  <h1 style="background-color:#dbd897;">#dbd897</h1>
+                  <h1 style="background-color:#daebdd;">#daebdd</h1> -->
+                  <div class="containergrid">
+                    <div class="block">
+                      <div class="one">
+                        <div class="desc">#ad1d1d</div>
+                      </div>
+                    </div>
+
+                    <div class="block">
+                      <div class="two">
+                        <div class="desc">#f7adad</div>
+                      </div>
+                    </div>
+
+                    <div class="block">
+                      <div class="three">
+                        <div class="desc">#111</div>
+                      </div>
+                    </div>
+
+                    <div class="block">
+                      <div class="four">
+                        <div class="desc">#             f2f2f2</div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="element2">
+                    <h3>Potential imagery, and, or, art direction</h3>
+                    <a href="https://www.magpul.com/"><img src="img/img1.jpg"></a>
+                    <a href="https://www.magpul.com/"><img src="img/img2.jpg"></a>
+                  </section>
+
+                </section>
+
+
+                <section id="citations">
+                  <h2>Citations</h2>
+
+                  <ul>
+                    <li>Magpul. Company. n.d. <strong> About Magpul [Webpage] </strong>. Retrieved from  <a href="https://www.magpul.com/about-magpul">https://www.magpul.com/about-magpul</a></li>
+                    <li>Magpul. Company. n.d. <strong> Stocks [Picture] </strong>. Retrieved from  <a href="https://www.magpul.com/firearms-accessories/stocks/see-all">https://www.magpul.com/firearms-accessories/stocks/see-all</a></li>
+                    <li>Magpul. Company. n.d. <strong> PMAG [Picture] </strong>. Retrieved from  <a href="https://www.magpul.com/firearms-accessories/pmags/see-all">https://www.magpul.com/firearms-accessories/pmags/see-all</a></li>
+                    <li>Magpul. Company. n.d. <strong> Magpul Apparel & Gear [Picture] </strong>. Retrieved from  <a href="https://www.magpul.com/apparel-gear">https://www.magpul.com/apparel-gear</a></li>
+                    <li>Magpul. Company. n.d. <strong> Magpul® Radius [Picture] </strong>. Retrieved from  <a href="https://www.magpul.com/products/magpul-radius">https://www.magpul.com/products/magpul-radius</a></li>
+                    <li>Magpul. Company. n.d. <strong> Magpul Core™ Flight Gloves [Picture] </strong>. Retrieved from  <a href="https://www.magpul.com/products/magpul-core-flight-gloves?ProductColor=VO420">https://www.magpul.com/products/magpul-core-flight-gloves?ProductColor=VO420</a></li>
+                    <li>Magpul. Company. n.d. <strong> Magpul® Bump Case – iPhone® X/Xs [Picture] </strong>. Retrieved from  <a href="https://www.magpul.com/products/magpul-bump-case---iphone-x-xs?ProductColor=VO347">https://www.magpul.com/products/magpul-bump-case---iphone-x-xs?ProductColor=VO347</a></li>
+                    <li> w3schools. Company. n.d. <strong> HTML <label> Tag </strong>. Retrieved from <a href="https://www.w3schools.com/tags/tag_label.asp">https://www.w3schools.com/tags/tag_label.asp</a>.</li>
+                      <li> w3schools. Company. n.d. <strong> HTML <label> Product Card </strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_product_card.asp">https://www.w3schools.com/howto/howto_css_product_card.asp</a>.</li>
+                        <li> w3schools. Company. n.d. <strong> HTML <label> How TO - Checkout Form </strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a>.</li>
+                          <li> w3schools. Company. n.d. <strong> HTML <label> How TO - Custom Checkbox </strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp">https://www.w3schools.com/howto/howto_css_custom_checkbox.asp</a>.</li>
+                            <li> w3schools. Company. n.d. <strong> HTML <label> How TO - Toggle Hide and Show </strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp">https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp</a>.</li>
+                              <li> Canvas. Website. n.d. <strong> ZIP <label> Sample style guide template </strong>. Retrieved from <a href="https://andrewh.ca/teaches/web_design_and_development/projects/P1-Process/P1-Style_Guide_Template.zip">https://canvas.sfu.ca/courses/48565/files/10603594/download?wrap=1</a>.</li>
+
+                                <!-- <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li> -->
+                              </ul>
+
+                            </section>
+
+
+                          </section>
+                        </body>
+                        </html>

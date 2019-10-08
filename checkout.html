@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Checkout</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <section class="navbar1">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product Listing</a></li>
+      <li><a class="active" href="checkout.html">Checkout</a></li>
+    </ul>
+  </section>
+
+
+  <section class="content">
+
+    <header>
+      <h1>My Cart</h1>
+    </header>
+
+    <!-- Checkout Cart -->
+    <section class="element3">
+
+      <div class="col-25">
+        <div class="container">
+          <h4>Cart
+            <span class="price" style="color:black">
+              <i class="fa fa-shopping-cart"></i>
+              <b>2</b>
+
+            </span>
+          </h4>
+          <br>
+          <p>
+            <img src="img/item2.png" alt="gloves" style="width:10%">
+            <a href="#">Magpul Core™ Flight Gloves</a> <span class="price">$15</span></p>
+            <p>
+              <img src="img/item1.png" alt="phone case" style="width:10%">
+              <a href="#">Magpul® Bump Case – iPhone® X/Xs</a> <span class="price">$5</span></p>
+
+              <hr>
+              <p>Total <span class="price" style="color:black"><b>$20</b></span></p>
+
+              <button onclick="myFunction()" class="button button3">CHECKOUT</button>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Payment Form -->
+        <div id="appear">
+          <section class="element3">
+
+            <div class="container">
+              <form action="index.html">
+                First name:<br>
+                <input type="text" name="firstname" value="Geo"><br><br>
+                Last name:<br>
+                <input type="text" name="lastname" value="Lin"><br><br>
+                Email:<br>
+                <input type="text" name="email" value="geo@gmail.com"><br><br>
+                Address:<br>
+                <input type="text" name="address" value="123 Funny Street"><br><br>
+                City:<br>
+                <input type="text" name="city" value="Vancouver"><br><br>
+                Credit Card Number:<br>
+                <input type="text" name="ccnumber" value="000000000000"><br><br>
+
+                Gender:<br>
+                <label class="radio">Male
+                  <input type="radio" checked="checked" name="gender" value="male" checked>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="radio">Female
+                  <input type="radio" name="gender" value="female">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="radio">Other
+                  <input type="radio" name="gender" value="other">
+                  <span class="checkmark"></span>
+                </label>
+              </form>
+              <button class="button button3" onclick="location.href='product.html';" value="Back to product" >Submit</button>
+
+            </div>
+          </section>
+        </div>
+      </section>
+    </body>
+    </html>
+
+
+
+
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("appear");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
