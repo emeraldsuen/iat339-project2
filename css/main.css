@@ -2,7 +2,7 @@
 STYLE GUIDE STYLING
 Default styling for the style guide
 */
-*{
+* {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
   font-family: "Oswald Light", sans-serif;
 }
 
-.content{
+.content {
   padding: 2rem;
 }
 
@@ -67,7 +67,7 @@ h2 {
   padding-bottom: 20px;
 }
 
-.header h2{
+.header h2 {
   /* font-family: "Oswald Light", sans-serif; */
   padding-top: 0px;
   padding-left: 0px;
@@ -87,7 +87,7 @@ h3 {
   margin-top: 1rem;
 }
 
-.header h3{
+.header h3 {
   display: block;
   font-size: 1.17em;
   margin-top: 1em;
@@ -116,11 +116,9 @@ code {
   display: block;
 }
 
-
 /*
 INTERACTIVE ELEMENTS -------------------
 */
-
 /* Styling for the navigation button */
 .button-nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -184,7 +182,7 @@ INTERACTIVE ELEMENTS -------------------
   position: fixed;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -196,7 +194,9 @@ INTERACTIVE ELEMENTS -------------------
   text-align: left;
 }
 
-.navbar1 .dropdown-content a:hover {background-color: #f1f1f1;}
+.navbar1 .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .navbar1 .dropdown:hover .dropdown-content {
   display: block;
@@ -273,7 +273,8 @@ INTERACTIVE ELEMENTS -------------------
 }
 
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%;
+  /* IE10 */
   flex: 25%;
 }
 
@@ -286,13 +287,13 @@ span.price {
   .row {
     flex-direction: column-reverse;
   }
+
   .col-25 {
     margin-bottom: 20px;
   }
 }
 
 /* payment section */
-
 .container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
@@ -310,7 +311,7 @@ a:hover {
   text-decoration: none;
 }
 
-.element2 a:hover{
+.element2 a:hover {
   background-color: white;
   filter: blur(8px);
   -webkit-filter: blur(8px);
@@ -343,14 +344,15 @@ a:hover {
 }
 
 /* hover on the input to focus and change the color to red */
-.info input:hover{
+.info input:hover {
   background-color: #ff91a1;
 }
 
 /* Buttons for payment form and checkout cart */
 .button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #4CAF50; /* red */
+  background-color: #4CAF50;
+  /* red */
   border: none;
   color: white;
   padding: 10px 16px;
@@ -359,7 +361,8 @@ a:hover {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   font-family: "Oswald Regular";
@@ -383,7 +386,7 @@ a:hover {
 }
 
 /* input changes color when hover in container */
-.container input:hover{
+.container input:hover {
   background-color: #f7adad;
 }
 
@@ -422,11 +425,12 @@ div.desc {
   font-family: "Oswald Regular";
 }
 
-.containergrid{
+.containergrid {
   /* Set the .container class to display as a flexbox,
   and to wrap flexbox items responsively. */
   display: flex;
 }
+
 .containergrid .block {
   flex-wrap: wrap;
   height: 200px;
@@ -437,6 +441,7 @@ div.desc {
   flex-grow: 1;
   flex-basis: 15em;
 }
+
 .containergrid .block p {
   padding: 0.5rem;
 }
@@ -492,12 +497,12 @@ div.desc {
 }
 
 /* On mouse-over, add a grey background color */
-.radio:hover input ~ .checkmark {
+.radio:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.radio input:checked ~ .checkmark {
+.radio input:checked~.checkmark {
   background-color: #ad1d1d;
 }
 
@@ -509,7 +514,7 @@ div.desc {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radio input:checked ~ .checkmark:after {
+.radio input:checked~.checkmark:after {
   display: block;
 }
 
@@ -524,25 +529,33 @@ div.desc {
 }
 
 /* Product Page */
-.product-container {  /* to hold all product cards */
+.product-container {
+  /* to hold all product cards */
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   /* width: 80%; */
-  justify-content: center;
+  justify-content: space-between;
+}
 
+.product-container::after {
+  content: "";
+  flex: auto;
 }
 
 .card2 {
+  /* all the commented out stuff was the stuff that gary tried out */
+  /* he suggested using media queries when the flexbox moves things to another line */
+  /* ill try that out on saturday and see where it goes -karmen */
+  /* flex-grow: 1; */
+  flex-basis: 25em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* float:left; */
-  max-width: 300px;
+  /* max-width: 300px; this was messing up the flex-grow and stuff */
   background-color: #f2f2f2;
-  /* margin: auto; */
   text-align: center;
   margin-left: 2.5%;
-  margin-right:2.5%;
+  margin-right: 2.5%;
   margin-top: 1em;
-  padding:1em;
+  padding: 1em;
 }
 
 .card2 button {
@@ -564,6 +577,6 @@ div.desc {
   opacity: 0.7;
 }
 
-#appear{
+#appear {
   display: none;
 }
