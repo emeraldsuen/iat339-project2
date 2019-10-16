@@ -12,6 +12,11 @@ body {
   font-family: 'Nova Regular';
 }
 
+/* Link */
+a{
+  color: #ad1d1d;
+}
+
 .content {
   padding: 2rem;
 }
