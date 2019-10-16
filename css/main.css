@@ -2,27 +2,19 @@
 STYLE GUIDE STYLING
 Default styling for the style guide
 */
-* {
-  font-family: 'Oswald', sans-serif;
-}
 
 @font-face {
-  font-family: "Oswald Regular", sans-serif;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Oswald Heavy", sans-serif;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Oswald Light", sans-serif;
-  font-weight: 300;
+  font-family: 'Nova Regular';
+  src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
 }
 
 body {
-  font-family: "Oswald Light", sans-serif;
+  font-family: 'Nova Regular';
+}
+
+/* Link */
+a{
+  color: #ad1d1d;
 }
 
 .content {
@@ -221,8 +213,9 @@ INTERACTIVE ELEMENTS -------------------
 }
 
 .search-bar {
+  /* position: absolute; */
   display: inline-block;
-  margin: 1em;
+  margin: 1em auto;
   /* float: right; */
 }
 
@@ -299,7 +292,7 @@ INTERACTIVE ELEMENTS -------------------
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  font-family: "Oswald Regular";
+  font-family: 'Nova Regular';
 }
 
 .card button:hover {
@@ -399,7 +392,7 @@ a:hover {
   /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  font-family: "Oswald Regular";
+  font-family: 'Nova Regular';
 }
 
 .button3 {
@@ -456,7 +449,7 @@ div.desc {
   font-size: 24px;
   padding: 15px;
   text-align: center;
-  font-family: "Oswald Regular";
+  font-family: 'Nova Regular';
 }
 
 .containergrid {
@@ -622,4 +615,17 @@ i {
 
 #appear {
   display: none;
+}
+
+/* FOOTER */
+div.footer{
+  margin-top: 5em;
+  position: absolute;
+  left: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width:100%;
+  background-color:#ad1d1d;
+  color: white;
+  text-align: center;
 }
