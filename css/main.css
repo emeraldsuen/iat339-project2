@@ -2,7 +2,6 @@
 STYLE GUIDE STYLING
 Default styling for the style guide
 */
-
 @font-face {
   font-family: 'Nova Regular';
   src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
@@ -13,7 +12,7 @@ body {
 }
 
 /* Link */
-a{
+a {
   color: #ad1d1d;
 }
 
@@ -323,8 +322,8 @@ span.price {
 /* payment section */
 .container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: auto;
-  max-width: 500px;
+  margin: 0.5em;
+  max-width: 100%;
   /* background-image: linear-gradient(#f2f2f2, #dbd897); */
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
@@ -617,15 +616,54 @@ i {
   display: none;
 }
 
+.checkout-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* display: block; */
+}
+
+.checkout-left {
+  width: 70%;
+  /* background-color: blue; */
+  display: inline-block;
+}
+
+.checkout-right {
+  width: 30%;
+  /* background-color: red; */
+  display: inline-block;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.payment-left {
+  width: 50%;
+}
+
+.payment-right {
+  width: 50%;
+}
+
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* FOOTER */
-div.footer{
+div.footer {
   margin-top: 5em;
   position: absolute;
   left: 0;
   padding-top: 3em;
   padding-bottom: 3em;
-  width:100%;
-  background-color:#ad1d1d;
+  width: 100%;
+  background-color: #ad1d1d;
   color: white;
   text-align: center;
 }
