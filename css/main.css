@@ -655,6 +655,43 @@ i {
   margin: 0 auto;
 }
 
+.event-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.event-card {
+  display: flex;
+  padding: 0.5em;
+}
+
+.event-title {
+  margin-top: 1rem;
+  color: black;
+  background-color: white;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.date-container {
+  width: 10%;
+  padding: 1em;
+}
+
+.date-container img {
+  width: 100%;
+}
+
+.info-container {
+  align-self: flex-end;
+  width: 90%;
+}
+
+.info-container img {
+  width: 100%;
+}
+
 /* FOOTER */
 div.footer {
   margin-top: 5em;
