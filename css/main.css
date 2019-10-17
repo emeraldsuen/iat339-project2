@@ -618,6 +618,7 @@ i {
 
 .checkout-content {
   width: 80%;
+  padding-top: 2em;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -703,4 +704,74 @@ div.footer {
   background-color: #ad1d1d;
   color: white;
   text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content button{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ad1d1d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  /* font-family: 'Oswald Regular', sans-serif; */
+  font-family: inherit;
+}
+
+.modal-content button:hover{
+  opacity: 0.7;
+}
+
+.product-container button2{
+color: #ad1d1d;;
+text-decoration: underline;
+}
+
+.product-container button2:hover{
+  background-color: #ad1d1d;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
