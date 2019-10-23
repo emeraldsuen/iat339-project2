@@ -211,7 +211,7 @@ INTERACTIVE ELEMENTS -------------------
   position: absolute;
 }
 .topB{
-  padding-top: 0.5em; 
+  padding-top: 0.5em;
   margin-left: 35%;
 }
 
@@ -367,12 +367,9 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/* The input bar of the form */
+/* The input bar of the form - STYLE GUIDE*/
 .info input {
-  background: #fff;
-  border: 1px solid #c6c7cc;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
-  color: #636466;
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1); */
   padding: 6px;
   margin-top: 6px;
   margin-bottom: 20px;
@@ -380,9 +377,9 @@ a:hover {
 }
 
 /* hover on the input to focus and change the color to red */
-.info input:hover {
+/* .info input:hover {
   background-color: #ff91a1;
-}
+} */
 
 /* Buttons for payment form and checkout cart */
 .button {
@@ -432,6 +429,19 @@ a:hover {
   box-shadow: none;
   padding: 0.5em;
   margin-top: 0.25em;
+}
+
+/* All of the input with red border */
+ input:hover {
+  border-style: solid;
+  border-color: #ad1d1d;
+}
+
+/* All text area with red border  */
+textarea:hover{
+  border-style: solid;
+  border-color: #ad1d1d;
+  border-width: 2px;
 }
 
 div.palette {
