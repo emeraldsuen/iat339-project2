@@ -1,0 +1,900 @@
+/*
+STYLE GUIDE STYLING
+Default styling for the style guide
+*/
+@font-face {
+  font-family: 'Nova Regular';
+  src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'Nova Regular';
+}
+
+/* Link */
+a {
+  color: #ad1d1d;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.element2 {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.element3 {
+  padding-bottom: 5rem;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  /* font-family: "Oswald Heavy", sans-serif; */
+  margin-top: 6rem;
+  color: white;
+  background-color: #ad1d1d;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.header h2 {
+  /* font-family: "Oswald Light", sans-serif; */
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  background: white;
+  color: black;
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.header h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/*
+INTERACTIVE ELEMENTS -------------------
+*/
+/* Styling for the navigation button */
+.button-nav {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 14px 16px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  transition-property: background-color;
+  /* transition-duration: 0.5s; */
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #111;
+}
+
+/* Real Navgation bar */
+.navbar1 ul {
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* THIS IS FOR STICKY NAV */
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.navbar1 li {
+  float: left;
+}
+
+.navbar1 li a {
+  display: block;
+  /* color: white; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar1 li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar1 li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+.navbar1 li.dropdown {
+  display: inline-block;
+}
+
+.navbar1 .dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar1 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar1 .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar1 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar1 .navbar1 li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbar1 img {
+  padding: 2em;
+}
+
+.navbar1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.topA {
+  position: absolute;
+}
+
+.topB {
+  padding-top: 0.5em;
+  margin-left: 35%;
+}
+
+.cart-icon {
+  float: right;
+}
+
+.search-bar {
+  /* position: absolute; */
+  display: inline-block;
+  margin: 1em auto;
+  /* float: right; */
+}
+
+.active {
+  background-color: #ad1d1d;
+}
+
+.product-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* navgation bar sample  */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ad1d1d;
+}
+
+.banner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* Product/service listing section */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  background-color: #f2f2f2;
+  margin: auto;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  /* display: inline-block; */
+  /* float: right; */
+}
+
+.card button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ad1d1d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Nova Regular';
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* payment section */
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5em;
+  max-width: 100%;
+  /* background-image: linear-gradient(#f2f2f2, #dbd897); */
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+a:hover {
+  background-color: #ad1d1d;
+  color: white;
+  text-decoration: none;
+}
+
+.element2 a:hover {
+  background-color: white;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.info {
+  margin-top: 30px;
+  padding: 50px 30px 0 20px;
+  max-width: 500px;
+}
+
+/* The title of the form */
+.info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* The input bar of the form - STYLE GUIDE*/
+.info input {
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1); */
+  padding: 6px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* hover on the input to focus and change the color to red */
+/* .info input:hover {
+  background-color: #ff91a1;
+} */
+/* Buttons for payment form and checkout cart */
+.button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #4CAF50;
+  /* red */
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Nova Regular';
+}
+
+.button3 {
+  background-color: #ad1d1d;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #f7adad;
+  color: white;
+  /* text-transform: uppercase; */
+}
+
+/* submit/reset button section - disabled button */
+.button3d {
+  background-color: #f7adad;
+  color: white;
+}
+
+/* input changes color when hover in container */
+.container input:hover {
+  /* background-color: #f7adad; */
+  border-style: solid;
+  border-color: #ad1d1d;
+}
+
+.container input {
+  box-shadow: none;
+  padding: 0.5em;
+  margin-top: 0.25em;
+}
+
+/* All of the input with red border */
+input:hover {
+  border-style: solid;
+  border-color: #ad1d1d;
+}
+
+/* All text area with red border  */
+textarea:hover {
+  border-style: solid;
+  border-color: #ad1d1d;
+  border-width: 2px;
+}
+
+div.palette {
+  /* margin: 5px; */
+  border: 1px solid #ccc;
+  background-color: #ad1d1d;
+  width: 180px;
+}
+
+div.palette2 {
+  /* margin: 5px; */
+  border: 1px solid #ccc;
+  background-color: #92ad7b;
+  width: 180px;
+}
+
+div.palette3 {
+  /* margin: 5px; */
+  border: 1px solid #ccc;
+  background-color: #dbd897;
+  width: 180px;
+}
+
+div.palette4 {
+  /* margin: 5px; */
+  border: 1px solid #ccc;
+  background-color: #daebdd;
+  width: 180px;
+}
+
+div.desc {
+  font-size: 24px;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Nova Regular';
+}
+
+.containergrid {
+  /* Set the .container class to display as a flexbox,
+  and to wrap flexbox items responsively. */
+  display: flex;
+}
+
+.containergrid .block {
+  flex-wrap: wrap;
+  height: 200px;
+  /* Set every element to use the border-box model. */
+  border: 2px solid black;
+  /* Set the .block class to grow as needed,
+  as well as to have a basis of 15em. */
+  flex-grow: 1;
+  flex-basis: 15em;
+}
+
+.containergrid .block p {
+  padding: 0.5rem;
+}
+
+.containergrid .block:nth-of-type(1) {
+  background-color: #ad1d1d;
+}
+
+.containergrid .block:nth-of-type(2) {
+  background-color: #f7adad;
+}
+
+.containergrid .block:nth-of-type(3) {
+  color: white;
+  background-color: #111;
+}
+
+.containergrid .block:nth-of-type(4) {
+  background-color: #f2f2f2;
+}
+
+/* The container */
+.radio {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Radio button style */
+/* Hide the browser's default radio button */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #f7adad;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked~.checkmark {
+  background-color: #ad1d1d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Product Page */
+.product-container {
+  /* to hold all product cards */
+  margin-left: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  /* width: 80%; */
+  /* justify-content: space-between; */
+  justify-content: start;
+}
+
+/* .product-container::after {
+  content: "";
+  flex: auto;
+  justify-content: start;
+} */
+i {
+  max-width: 300px;
+  height: 250px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1em;
+}
+
+.card2 {
+  /* all the commented out stuff was the stuff that gary tried out */
+  /* he suggested using media queries when the flexbox moves things to another line */
+  /* ill try that out on saturday and see where it goes -karmen */
+  /* flex-grow: 1; */
+  flex-basis: 25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.card2 button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ad1d1d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  /* font-family: 'Oswald Regular', sans-serif; */
+  font-family: inherit;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}
+
+#appear {
+  display: none;
+}
+
+.checkout-content {
+  width: 80%;
+  padding-top: 2em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* display: block; */
+}
+
+.checkout-left {
+  width: 70%;
+  /* background-color: blue; */
+  display: inline-block;
+}
+
+.checkout-right {
+  width: 30%;
+  /* background-color: red; */
+  display: inline-block;
+}
+
+/* CART ALIGNMENT */
+.cart-align-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-image {
+  width: 15%;
+  padding: 0.5em;
+  padding-left: 0;
+  min-width: 3em;
+}
+
+.cart-image img {
+  width: 100%;
+}
+
+.cart-text {
+  padding: 0.5em;
+  flex-grow: 2;
+}
+
+.cart-price {
+  float: right;
+  padding: 0.5em;
+  padding-right: 0;
+  color: grey;
+  font-size: 22px;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.payment-left {
+  width: 50%;
+}
+
+.payment.left input {
+  -webkit-appearance: none;
+  box-shadow: inset 0px 0px 0px 0px red;
+}
+
+.payment-right {
+  width: 50%;
+}
+
+/* ********RESPONSIVE************* */
+/* BIG */
+@media (max-width: 54em) {
+  .checkout-content {
+    width: 80%;
+    padding-top: 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    display: block;
+  }
+
+  .checkout-left {
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+  }
+
+  .checkout-right {
+    width: 100%;
+    /* background-color: red; */
+    display: inline-block;
+  }
+}
+
+/* SMALL */
+@media (max-width: 40em) {
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .payment-left {
+    width: 100%;
+  }
+
+  .payment.left input {
+    -webkit-appearance: none;
+    box-shadow: inset 0px 0px 0px 0px red;
+  }
+
+  .payment-right {
+    width: 100%;
+  }
+}
+
+/* **************************** */
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.event-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.event-card {
+  display: flex;
+  padding: 0.5em;
+}
+
+.event-title {
+  margin-top: 1rem;
+  color: black;
+  background-color: white;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.date-container {
+  width: 10%;
+  padding: 1em;
+}
+
+.date-container img {
+  width: 100%;
+}
+
+.info-container {
+  align-self: flex-end;
+  width: 90%;
+}
+
+.info-container img {
+  width: 100%;
+}
+
+/* FOOTER */
+div.footer {
+  margin-top: 5em;
+  position: absolute;
+  left: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 100%;
+  background-color: #ad1d1d;
+  color: white;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ad1d1d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  /* font-family: 'Oswald Regular', sans-serif; */
+  font-family: inherit;
+}
+
+.modal-content button:hover {
+  opacity: 0.7;
+}
+
+.product-container button2 {
+  color: #ad1d1d;
+  ;
+  text-decoration: underline;
+}
+
+.product-container button2:hover {
+  background-color: #ad1d1d;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

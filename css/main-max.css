@@ -207,10 +207,11 @@ INTERACTIVE ELEMENTS -------------------
   margin: 0 auto;
 }
 
-.topA{
+.topA {
   position: absolute;
 }
-.topB{
+
+.topB {
   padding-top: 0.5em;
   margin-left: 35%;
 }
@@ -380,7 +381,6 @@ a:hover {
 /* .info input:hover {
   background-color: #ff91a1;
 } */
-
 /* Buttons for payment form and checkout cart */
 .button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -432,13 +432,13 @@ a:hover {
 }
 
 /* All of the input with red border */
- input:hover {
+input:hover {
   border-style: solid;
   border-color: #ad1d1d;
 }
 
 /* All text area with red border  */
-textarea:hover{
+textarea:hover {
   border-style: solid;
   border-color: #ad1d1d;
   border-width: 2px;
@@ -585,6 +585,7 @@ div.desc {
 /* Product Page */
 .product-container {
   /* to hold all product cards */
+  margin-left: 10%;
   display: flex;
   flex-flow: row wrap;
   /* width: 80%; */
@@ -715,6 +716,8 @@ i {
   width: 50%;
 }
 
+/* ********RESPONSIVE************* */
+/* BIG */
 @media (max-width: 54em) {
   .checkout-content {
     width: 80%;
@@ -738,6 +741,7 @@ i {
   }
 }
 
+/* SMALL */
 @media (max-width: 40em) {
   .payment-container {
     display: flex;
@@ -759,6 +763,7 @@ i {
   }
 }
 
+/* **************************** */
 .contact-container {
   width: 80%;
   margin: 0 auto;
