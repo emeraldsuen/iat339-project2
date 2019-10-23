@@ -207,6 +207,14 @@ INTERACTIVE ELEMENTS -------------------
   margin: 0 auto;
 }
 
+.topA{
+  position: absolute;
+}
+.topB{
+  padding-top: 0.5em; 
+  margin-left: 35%;
+}
+
 .cart-icon {
   float: right;
 }
