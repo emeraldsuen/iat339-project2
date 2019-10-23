@@ -278,6 +278,8 @@ INTERACTIVE ELEMENTS -------------------
 .price {
   color: grey;
   font-size: 22px;
+  /* display: inline-block; */
+  /* float: right; */
 }
 
 .card button {
@@ -413,7 +415,15 @@ a:hover {
 
 /* input changes color when hover in container */
 .container input:hover {
-  background-color: #f7adad;
+  /* background-color: #f7adad; */
+  border-style: solid;
+  border-color: #ad1d1d;
+}
+
+.container input {
+  box-shadow: none;
+  padding: 0.5em;
+  margin-top: 0.25em;
 }
 
 div.palette {
@@ -637,6 +647,37 @@ i {
   display: inline-block;
 }
 
+/* CART ALIGNMENT */
+.cart-align-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-image {
+  width: 15%;
+  padding: 0.5em;
+  padding-left: 0;
+  min-width: 3em;
+}
+
+.cart-image img {
+  width: 100%;
+}
+
+.cart-text {
+  padding: 0.5em;
+  flex-grow: 2;
+}
+
+.cart-price {
+  float: right;
+  padding: 0.5em;
+  padding-right: 0;
+  color: grey;
+  font-size: 22px;
+}
+
 .payment-container {
   display: flex;
   flex-direction: row;
@@ -647,8 +688,57 @@ i {
   width: 50%;
 }
 
+.payment.left input {
+  -webkit-appearance: none;
+  box-shadow: inset 0px 0px 0px 0px red;
+}
+
 .payment-right {
   width: 50%;
+}
+
+@media (max-width: 54em) {
+  .checkout-content {
+    width: 80%;
+    padding-top: 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    display: block;
+  }
+
+  .checkout-left {
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+  }
+
+  .checkout-right {
+    width: 100%;
+    /* background-color: red; */
+    display: inline-block;
+  }
+}
+
+@media (max-width: 40em) {
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .payment-left {
+    width: 100%;
+  }
+
+  .payment.left input {
+    -webkit-appearance: none;
+    box-shadow: inset 0px 0px 0px 0px red;
+  }
+
+  .payment-right {
+    width: 100%;
+  }
 }
 
 .contact-container {
@@ -708,17 +798,26 @@ div.footer {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -745,7 +844,7 @@ div.footer {
   cursor: pointer;
 }
 
-.modal-content button{
+.modal-content button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: none;
   outline: 0;
@@ -760,16 +859,17 @@ div.footer {
   font-family: inherit;
 }
 
-.modal-content button:hover{
+.modal-content button:hover {
   opacity: 0.7;
 }
 
-.product-container button2{
-color: #ad1d1d;;
-text-decoration: underline;
+.product-container button2 {
+  color: #ad1d1d;
+  ;
+  text-decoration: underline;
 }
 
-.product-container button2:hover{
+.product-container button2:hover {
   background-color: #ad1d1d;
   color: white;
   text-decoration: none;
