@@ -207,13 +207,22 @@ INTERACTIVE ELEMENTS -------------------
   margin: 0 auto;
 }
 
+@media (max-width: 40em) {
+  .header-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .topA {
   position: absolute;
 }
 
 .topB {
   padding-top: 0.5em;
-  margin-left: 35%;
+  /* margin-left: 35%; */
+  float: right;
+  display: inline-block;
 }
 
 .cart-icon {
@@ -241,6 +250,7 @@ INTERACTIVE ELEMENTS -------------------
   /* position: absolute; */
   display: inline-block;
   margin: 1em auto;
+  padding-top: 0.25em;
   /* float: right; */
 }
 
