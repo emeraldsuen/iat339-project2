@@ -207,61 +207,33 @@ INTERACTIVE ELEMENTS -------------------
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 nav.navbar.navbar-expand-sm.navbar-light {
   padding: 0;
-=======
-=======
->>>>>>> master
-@media (max-width: 40em) {
-  .header-box {
-    display: flex;
-    flex-direction: column;
-  }
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 }
 
 .topA {
   position: absolute;
 }
 
+.topA a:hover {
+  background-color: white;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
 .topB {
   padding-top: 0.5em;
-  /* margin-left: 35%; */
-  float: right;
-  display: inline-block;
+  margin-left: 35%;
 }
 
 .cart-icon {
   float: right;
 }
 
-.logo-nav a {
-  text-decoration: none !important;
-  border: none !important;
-}
-
-.logo-nav a:hover {
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
-/* gets rid of red overlay when hovering over image */
-.logo-nav img, img:hover {
-  background-color: white;
-  color: white;
-  text-decoration: none;
-}
-
 .search-bar {
   /* position: absolute; */
   display: inline-block;
   margin: 1em auto;
-  padding-top: 0.25em;
   /* float: right; */
 }
 
@@ -456,14 +428,8 @@ a:hover {
   color: white;
 }
 
-/* input changes color when hover/focus in container */
+/* input changes color when hover in container */
 .container input:hover {
-  /* background-color: #f7adad; */
-  border-style: solid;
-  border-color: #ad1d1d;
-}
-
-.container input:focus {
   /* background-color: #f7adad; */
   border-style: solid;
   border-color: #ad1d1d;
@@ -473,17 +439,6 @@ a:hover {
   box-shadow: none;
   padding: 0.5em;
   margin-top: 0.25em;
-  width: 80%;
-  font-family: inherit;
-}
-
-/* large textbox for contact form */
-.container textarea {
-  font-family: inherit;
-  box-shadow: none;
-  padding: 0.5em;
-  margin-top: 0.25em;
-  width: 80%;
 }
 
 /* All of the input with red border */
@@ -671,10 +626,9 @@ i {
   max-width: 300px;
   background-color: #f2f2f2;
   text-align: center;
-  /* margin-left: 2.5%;
+  margin-left: 2.5%;
   margin-right: 2.5%;
-  margin-top: 2.5%; */
-  margin: 2.5%;
+  margin-top: 1em;
   padding: 1em;
 }
 

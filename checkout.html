@@ -7,58 +7,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, minimum-scale=1" />
   <title>Checkout|MAGPUL</title>
 
-  <link rel="stylesheet" media="(min-width:800px)" href="css/main-max.css">
-  <link rel="stylesheet" media="(max-width:800px)" href="css/main-min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+  <!-- Navbar - Hamburger -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Homepage banner -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+  <!-- unknown -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" media="(min-width:500px)" href="css/main-max.css">
+  <link rel="stylesheet" media="(max-width:500px)" href="css/main-min.css">
 </head>
 
 <body>
 
   <!-- Navgation Bar -->
-  <header class="navbar1">
-    <div>
+    <header class="navbar1">
+      <div>
 
-      <!-- MAGPUL logo -->
-      <div class="topA">
-        <a href="home.html" class="logo-nav"><img src="img/logo.png"></a>
-      </div>
-
-      <!-- Search Bar -->
-      <div class="topB">
-        <div class="search-bar">
-          <label for="input">Search the site: </label>
-          <input class="search-bar" id="input" type="text">
+        <div class="header-box">
+        <!-- MAGPUL logo -->
+        <div class="topA">
+          <a href="home.html" class="logo-nav"><img src="img/logo.png"></a>
         </div>
 
-        <!-- Checkout icon -->
-        <a href="checkout.html"><img class="cart-icon" src="img/cart.png" width="25em;"></a>
+        <!-- Search Bar -->
+        <div class="topB">
+          <div class="search-bar">
+            <label for="input">Search the site: </label>
+            <input class="search-bar" id="input" type="text">
+          </div>
+
+          <!-- Checkout icon -->
+          <a href="checkout.html"><img class="cart-icon" src="img/cart.png" width="25em;"></a>
+        </div>
       </div>
 
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="product.html">Product Listing</a></li>
-        <li><a class="active" href="checkout.html">Checkout</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li class="dropdown">
-          <a href="index.html" class="dropbtn">Style Guide</a>
-          <div class="dropdown-content">
-            <a href="index.html#idea">Branding Idea</a>
-            <a href="index.html#interactive_elements">Interactive Elements</a>
-            <a href="index.html#text_elements">Text Elements</a>
-            <a href="index.html#combined_elements">Combined Elements</a>
-            <a href="index.html#components">Brand Components</a>
-            <a href="index.html#citations">Citations</a>
-          </div>
-        </li>
 
-    </div>
-    </li>
-    </ul>
-    </div>
-  </header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li><a class="active" href="home.html">Home</a></li>
+              <li><a href="product.html">Product Listing</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li class="dropdown">
+                <a href="index.html" class="dropbtn">Style Guide</a>
+                <div class="dropdown-content">
+                  <a href="index.html#idea">Branding Idea</a>
+                  <a href="index.html#interactive_elements">Interactive Elements</a>
+                  <a href="index.html#text_elements">Text Elements</a>
+                  <a href="index.html#combined_elements">Combined Elements</a>
+                  <a href="index.html#components">Brand Components</a>
+                  <a href="index.html#citations">Citations</a>
+                </div>
+              </li>
+
+          </li>
+          </ul>
+        </div>
+        </nav>
+      </div>
+    </header>
 
   <!-- Checkout Cart -->
   <div class="checkout-content">
