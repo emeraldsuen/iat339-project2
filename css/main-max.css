@@ -220,29 +220,17 @@ INTERACTIVE ELEMENTS -------------------
   float: right;
 }
 
-/* .logo-nav img:hover {
-  background-color: white;
-  color: white;
-  text-decoration: none;
-} */
-.logo-nav {
-  /* text-decoration: none;
-  text-decoration-color: white;
-  background-color: white; */
-  border: none !important;
-  text-decoration: none;
-  text-decoration-color: white;
-  text-decoration-style: solid;
-}
-
 .logo-nav a {
-  background-color: white;
+  text-decoration: none !important;
   border: none !important;
-  text-decoration: none;
-  text-decoration-color: white;
-  text-decoration-style: solid;
 }
 
+.logo-nav a:hover {
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+/* gets rid of red overlay when hovering over image */
 .logo-nav img, img:hover {
   background-color: white;
   color: white;
@@ -465,6 +453,7 @@ a:hover {
   padding: 0.5em;
   margin-top: 0.25em;
   width: 80%;
+  font-family: inherit;
 }
 
 /* large textbox for contact form */

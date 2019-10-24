@@ -229,9 +229,6 @@ INTERACTIVE ELEMENTS -------------------
 .logo-nav a:hover {
   text-decoration: none;
   text-decoration-color: white;
-  /* background-color: white; */
-  /* color: white; */
-  /* outline: 0; */
 }
 
 /* gets rid of red overlay when hovering over image */
