@@ -208,6 +208,7 @@ INTERACTIVE ELEMENTS -------------------
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav.navbar.navbar-expand-sm.navbar-light {
   padding: 0;
 }
@@ -222,6 +223,26 @@ nav.navbar.navbar-expand-sm.navbar-light {
   padding-top: 0.5em;
   /* margin-left: 35%; */
   vertical-align: middle;
+=======
+.header-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding-bottom: 1em; */
+  flex-wrap: wrap;
+}
+
+.topA {
+  /* position: absolute; */
+  text-decoration: none;
+  align-self: center;
+}
+
+.topB {
+  /* padding: 0.5em; */
+  /* margin-left: 35%;
+  min-width: 75%; */
+>>>>>>> master
 =======
 .header-box {
   display: flex;

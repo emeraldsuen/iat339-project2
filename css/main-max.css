@@ -208,14 +208,20 @@ INTERACTIVE ELEMENTS -------------------
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav.navbar.navbar-expand-sm.navbar-light {
   padding: 0;
 =======
+=======
+>>>>>>> master
 @media (max-width: 40em) {
   .header-box {
     display: flex;
     flex-direction: column;
   }
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
 
