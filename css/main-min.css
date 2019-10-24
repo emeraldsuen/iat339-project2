@@ -207,62 +207,33 @@ INTERACTIVE ELEMENTS -------------------
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 nav.navbar.navbar-expand-sm.navbar-light {
+  z-index: 1;
   padding: 0;
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
 .topA {
+  margin-left: 10%;
+  margin-right: 10%;
   position: relative;
   text-decoration: none;
   vertical-align: middle;
 }
 
 .topB {
-  padding-top: 0.5em;
   /* margin-left: 35%; */
   vertical-align: middle;
-=======
+}
+
 .header-box {
   display: flex;
   flex-direction: column;
   width: 100%;
   /* padding-bottom: 1em; */
   flex-wrap: wrap;
-}
-
-.topA {
-  /* position: absolute; */
-  text-decoration: none;
-  align-self: center;
-}
-
-.topB {
-  /* padding: 0.5em; */
-  /* margin-left: 35%;
-  min-width: 75%; */
->>>>>>> master
-=======
-.header-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  /* padding-bottom: 1em; */
-  flex-wrap: wrap;
-}
-
-.topA {
-  /* position: absolute; */
-  text-decoration: none;
-  align-self: center;
-}
-
-.topB {
-  /* padding: 0.5em; */
-  /* margin-left: 35%;
-  min-width: 75%; */
->>>>>>> master
 }
 
 .cart-icon {
