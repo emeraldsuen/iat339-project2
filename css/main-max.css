@@ -207,6 +207,10 @@ INTERACTIVE ELEMENTS -------------------
   margin: 0 auto;
 }
 
+nav.navbar.navbar-expand-sm.navbar-light {
+  padding: 0;
+}
+
 @media (max-width: 40em) {
   .header-box {
     display: flex;
