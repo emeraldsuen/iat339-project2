@@ -207,8 +207,16 @@ INTERACTIVE ELEMENTS -------------------
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 nav.navbar.navbar-expand-sm.navbar-light {
   padding: 0;
+=======
+@media (max-width: 40em) {
+  .header-box {
+    display: flex;
+    flex-direction: column;
+  }
+>>>>>>> master
 }
 
 .topA {
@@ -217,7 +225,9 @@ nav.navbar.navbar-expand-sm.navbar-light {
 
 .topB {
   padding-top: 0.5em;
-  margin-left: 35%;
+  /* margin-left: 35%; */
+  float: right;
+  display: inline-block;
 }
 
 .cart-icon {
@@ -245,6 +255,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
   /* position: absolute; */
   display: inline-block;
   margin: 1em auto;
+  padding-top: 0.25em;
   /* float: right; */
 }
 
@@ -937,3 +948,9 @@ div.footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* SLIDESHOW */
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
