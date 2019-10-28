@@ -126,6 +126,8 @@ INTERACTIVE ELEMENTS -------------------
   background-color: #111;
 }
 
+/* TEST NAVBAR */
+/* END OF TEST NAV */
 /* Real Navgation bar */
 .navbar1 ul {
   z-index: 1;
@@ -955,7 +957,16 @@ div.footer {
 }
 
 /* SLIDESHOW */
+.mySlides {
+  display: none
+}
 
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0
+}

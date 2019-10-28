@@ -107,6 +107,8 @@ code {
   display: block;
 }
 
+/* TEST NAVBAR */
+/* END OF TEST NAV */
 /*
 INTERACTIVE ELEMENTS -------------------
 */
@@ -241,8 +243,8 @@ nav.navbar.navbar-expand-sm.navbar-light {
   background-color: #ad1d1d;
 }
 
-.w3-content w3-display-container{
-  width:100%;
+.w3-content w3-display-container {
+  width: 100%;
 }
 
 .product-section {
@@ -914,7 +916,16 @@ div.footer {
 }
 
 /* SLIDESHOW */
+.mySlides {
+  display: none
+}
 
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0
+}
