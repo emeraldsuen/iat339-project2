@@ -217,8 +217,8 @@ nav.navbar.navbar-expand-sm.navbar-light {
 
 .topA a:hover {
   background-color: white;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 
 .topB {
@@ -239,6 +239,10 @@ nav.navbar.navbar-expand-sm.navbar-light {
 
 .active {
   background-color: #ad1d1d;
+}
+
+.w3-content w3-display-container{
+  width:100%;
 }
 
 .product-section {
