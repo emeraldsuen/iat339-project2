@@ -216,7 +216,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
   justify-content: space-between;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 815px) {
   .header-box {
     display: flex;
     flex-direction: column;
@@ -240,7 +240,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
 }
 
 .topB {
-  padding-top: 0.5em;
+  /* padding-top: 0.5em; */
   /* margin-left: 35%; */
   float: right;
 }
@@ -254,11 +254,13 @@ nav.navbar.navbar-expand-sm.navbar-light {
   /* position: absolute; */
   display: inline-block;
   margin: 1em auto;
+  padding-top: 1em;
   /* float: right; */
 }
 
-.searcch-bar input {
-  padding: 0.5em;
+.search-bar input {
+  padding: 0.25em 0.5em;
+  box-sizing: border-box;
 }
 
 .active {
@@ -370,8 +372,9 @@ span.price {
 
 /* payment section */
 .container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0.5em;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* margin: 1em; */
+  margin-bottom: 1em;
   max-width: 100%;
   /* background-image: linear-gradient(#f2f2f2, #dbd897); */
   background-color: #f2f2f2;
@@ -467,6 +470,7 @@ a:hover {
   box-shadow: none;
   padding: 0.5em;
   margin-top: 0.25em;
+  width: 90%;
 }
 
 /* All of the input with red border */
@@ -686,20 +690,13 @@ i {
   display: none;
 }
 
-.checkout-bar hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  border: 1px solid black !important;
+.container hr {
+  border-top: 1px solid #ccc !important;
 }
 
 .checkout-content {
   width: 80%;
-  padding-top: 2em;
+  /* padding-top: 1em; */
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -710,12 +707,14 @@ i {
   width: 70%;
   /* background-color: blue; */
   display: inline-block;
+  margin: 1em;
 }
 
 .checkout-right {
   width: 30%;
   /* background-color: red; */
   display: inline-block;
+  margin: 1em;
 }
 
 /* CART ALIGNMENT */
@@ -753,6 +752,7 @@ i {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-top: 1em;
 }
 
 .payment-left {

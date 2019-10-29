@@ -267,8 +267,14 @@ nav.navbar.navbar-expand-sm.navbar-light {
   /* position: absolute; */
   display: inline-block;
   margin: 1em auto;
-  padding-top: 0.25em;
+  padding-top: 1em;
+  /* box-sizing: border-box; */
   /* float: right; */
+}
+
+.search-bar input {
+  padding: 0.25em 0.5em;
+  box-sizing: border-box;
 }
 
 .active {
@@ -376,8 +382,8 @@ span.price {
 
 /* payment section */
 .container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0.5em;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  margin-bottom: 1em;
   max-width: 100%;
   /* background-image: linear-gradient(#f2f2f2, #dbd897); */
   background-color: #f2f2f2;
