@@ -601,14 +601,20 @@ div.desc {
 }
 
 /* Product Page */
+.product-box {
+  margin: 0 auto;
+  width: max-content;
+}
+
 .product-container {
   /* to hold all product cards */
-  margin-left: 10%;
+  /* margin-left: 10%; */
   display: flex;
   flex-flow: row wrap;
   /* width: 80%; */
   /* justify-content: space-between; */
   justify-content: start;
+  margin: 0 auto;
 }
 
 /* .product-container::after {
@@ -625,9 +631,6 @@ i {
 }
 
 .card2 {
-  /* all the commented out stuff was the stuff that gary tried out */
-  /* he suggested using media queries when the flexbox moves things to another line */
-  /* ill try that out on saturday and see where it goes -karmen */
   /* flex-grow: 1; */
   flex-basis: 25em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -661,6 +664,17 @@ i {
 
 #appear {
   display: none;
+}
+
+.checkout-bar hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border: 1px solid black !important;
 }
 
 .checkout-content {
@@ -965,7 +979,6 @@ div.footer .context {
 
 .product-container button2 {
   color: #ad1d1d;
-  ;
   text-decoration: underline;
 }
 

@@ -700,6 +700,17 @@ i {
   display: none;
 }
 
+.checkout-bar hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border: 1px solid black !important;
+}
+
 .checkout-content {
   width: 80%;
   padding-top: 2em;
