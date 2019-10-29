@@ -215,6 +215,11 @@ nav.navbar.navbar-expand-sm.navbar-light {
   top: 10px;
 }
 
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 .topA {
   margin-left: 10%;
   margin-right: 10%;
@@ -238,6 +243,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
 
 .cart-icon {
   float: right;
+  width: 6.5em;
 }
 
 .logo-nav a {
