@@ -267,8 +267,8 @@ nav.navbar.navbar-expand-sm.navbar-light {
   background-color: #ad1d1d;
 }
 
-.w3-content w3-display-container {
-  width: 100%;
+.w3-content w3-display-container{
+  width:100%;
 }
 
 .product-section {
@@ -625,20 +625,11 @@ div.desc {
 }
 
 /* Product Page */
-.product-box {
-  margin: 0 auto;
-  width: max-content;
-}
-
 .product-container {
   /* to hold all product cards */
-  /* margin-left: 10%; */
   display: flex;
   flex-flow: row wrap;
-  /* width: 80%; */
-  /* justify-content: space-between; */
-  justify-content: start;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 /* .product-container::after {
@@ -655,6 +646,9 @@ i {
 }
 
 .card2 {
+  /* all the commented out stuff was the stuff that gary tried out */
+  /* he suggested using media queries when the flexbox moves things to another line */
+  /* ill try that out on saturday and see where it goes -karmen */
   /* flex-grow: 1; */
   flex-basis: 25em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -768,33 +762,6 @@ i {
   width: 50%;
 }
 
-.feedback-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0.5em;
-  width: fit-content;
-  /* background-image: linear-gradient(#f2f2f2, #dbd897); */
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-}
-
-.feedback-container input:hover {
-  /* background-color: #f7adad; */
-  border-style: solid;
-  border-color: #ad1d1d;
-}
-
-.feedback-container input {
-  box-shadow: none;
-  padding: 0.5em;
-  margin-top: 0.25em;
-}
-
-.feedback-container textarea {
-  padding: 0.5em;
-}
-
 /* ********RESPONSIVE************* */
 /* BIG */
 @media (max-width: 54em) {
@@ -848,22 +815,6 @@ i {
   margin: 0 auto;
 }
 
-.mission-statement {
-  font-size: 1.25em;
-  margin-left: 1em;
-  font-style: italic;
-}
-
-.section-title {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.info-title {
-  margin: 0;
-  font-weight: bold;
-}
-
 .event-container {
   width: 80%;
   margin: 0 auto;
@@ -914,19 +865,19 @@ div.footer {
   text-align: left;
 }
 
-div.footer .flex-container {
+div.footer .flex-container{
   display: flex;
 }
 
-div.footer .flex-container>div {
+div.footer .flex-container > div{
   padding: 0em 4em 1em 4em;
 }
 
-div.footer a {
+div.footer a{
   color: white;
 }
 
-div.footer .context {
+div.footer .context{
   padding: 1em 4em 0em 4em;
 }
 
@@ -999,6 +950,7 @@ div.footer .context {
 
 .product-container button2 {
   color: #ad1d1d;
+  ;
   text-decoration: underline;
 }
 
@@ -1009,17 +961,10 @@ div.footer .context {
   cursor: pointer;
 }
 
+
+
 /* SLIDESHOW */
-.mySlides {
-  display: none
-}
 
-.w3-left, .w3-right, .w3-badge {
-  cursor: pointer
-}
-
-.w3-badge {
-  height: 13px;
-  width: 13px;
-  padding: 0
-}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
