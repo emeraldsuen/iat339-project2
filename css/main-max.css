@@ -211,8 +211,26 @@ nav.navbar.navbar-expand-sm.navbar-light {
   padding: 0;
 }
 
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 735px) {
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .topA {
+    margin: 0 auto;
+  }
+}
+
 .topA {
-  position: absolute;
+  /* position: absolute; */
+  width: fit-content;
 }
 
 .topA a:hover {
@@ -223,11 +241,13 @@ nav.navbar.navbar-expand-sm.navbar-light {
 
 .topB {
   padding-top: 0.5em;
-  margin-left: 35%;
+  /* margin-left: 35%; */
+  float: right;
 }
 
 .cart-icon {
   float: right;
+  width: 6.5em;
 }
 
 .search-bar {
