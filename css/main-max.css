@@ -825,12 +825,28 @@ div.footer {
   margin-top: 5em;
   position: absolute;
   left: 0;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 6em;
+  padding-bottom: 6em;
   width: 100%;
   background-color: #ad1d1d;
   color: white;
-  text-align: center;
+  text-align: left;
+}
+
+div.footer .flex-container{
+  display: flex;
+}
+
+div.footer .flex-container > div{
+  padding: 0em 4em 1em 4em;
+}
+
+div.footer a{
+  color: white;
+}
+
+div.footer .context{
+  padding: 1em 4em 0em 4em;
 }
 
 /* The Modal (background) */
@@ -912,6 +928,8 @@ div.footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+
 
 /* SLIDESHOW */
 
