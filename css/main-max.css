@@ -127,7 +127,40 @@ INTERACTIVE ELEMENTS -------------------
 }
 
 /* Real Navgation bar */
-.navbar1 ul {
+@media (min-width: 500px) {
+  summary {
+    display: none;
+  }
+}
+
+.nav-details {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-details ul {
+  list-style-type: none;
+  background-color: #333;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.nav-details li {
+  float: none;
+}
+
+.nav-details li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original ul {
   z-index: 1;
   list-style-type: none;
   margin: 0;
@@ -135,8 +168,74 @@ INTERACTIVE ELEMENTS -------------------
   overflow: hidden;
   background-color: #333;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* THIS IS FOR STICKY NAV */
-  /* position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar-original li {
+  float: left;
+}
+
+.nav-bar-original li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+.nav-bar-original li.dropdown {
+  display: inline-block;
+}
+
+.nav-bar-original .dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav-bar-original .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-bar-original .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-bar-original .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-bar-original .nav-bar-original li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* .navbar1 ul {
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   top: 0;
   width: 100%;
 }
@@ -147,7 +246,6 @@ INTERACTIVE ELEMENTS -------------------
 
 .navbar1 li a {
   display: block;
-  /* color: white; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -196,8 +294,7 @@ INTERACTIVE ELEMENTS -------------------
 
 .navbar1 .navbar1 li a:hover:not(.active) {
   background-color: #111;
-}
-
+} */
 .navbar1 img {
   padding: 2em;
 }
@@ -267,8 +364,8 @@ nav.navbar.navbar-expand-sm.navbar-light {
   background-color: #ad1d1d;
 }
 
-.w3-content w3-display-container{
-  width:100%;
+.w3-content w3-display-container {
+  width: 100%;
 }
 
 .product-section {
@@ -865,19 +962,19 @@ div.footer {
   text-align: left;
 }
 
-div.footer .flex-container{
+div.footer .flex-container {
   display: flex;
 }
 
-div.footer .flex-container > div{
+div.footer .flex-container>div {
   padding: 0em 4em 1em 4em;
 }
 
-div.footer a{
+div.footer a {
   color: white;
 }
 
-div.footer .context{
+div.footer .context {
   padding: 1em 4em 0em 4em;
 }
 
@@ -961,10 +1058,17 @@ div.footer .context{
   cursor: pointer;
 }
 
-
-
 /* SLIDESHOW */
+.mySlides {
+  display: none
+}
 
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0
+}
