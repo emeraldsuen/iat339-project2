@@ -1,0 +1,265 @@
+/*
+STYLE GUIDE STYLING
+Default styling for the style guide
+*/
+@font-face {
+  font-family: 'Nova Regular';
+  src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'Nova Regular';
+}
+
+/* Link */
+a {
+  /* color: #ad1d1d; */
+}
+
+.content {
+  padding: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.element2 {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.element3 {
+  padding-bottom: 5rem;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  /* font-family: "Oswald Heavy", sans-serif; */
+  margin-top: 6rem;
+  color: white;
+  background-color: #ad1d1d;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.header h2 {
+  /* font-family: "Oswald Light", sans-serif; */
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  background: white;
+  color: black;
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.header h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* INTERACTIVE ELEMENTS */
+.button-nav {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 14px 16px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  transition-property: background-color;
+  /* transition-duration: 0.5s; */
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #111;
+}
+
+/* COLLAPSIBLE NAV BAR */
+.nav-details {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-details ul {
+  list-style-type: none;
+  background-color: #333;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.nav-details li {
+  float: none;
+}
+
+.nav-details li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* EXPANDED NAV BAR */
+.nav-bar-original ul {
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar-original li {
+  float: left;
+}
+
+.nav-bar-original li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+.nav-bar-original li.dropdown {
+  display: inline-block;
+}
+
+.nav-bar-original .dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav-bar-original .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-bar-original .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-bar-original .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-bar-original .nav-bar-original li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* HEADER STYLING */
+.navbar1 img {
+  padding: 2em;
+}
+
+.navbar1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HEADER - MEDIA QUERIES */
+/* Extra Small Devices (phones, < 575px) */
+@media (max-width: 575px) {}
+
+/* Small Devices (landscape phones, 576-767px) */
+@media (min-width: 576px) {
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topA {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+}
+
+/* Medium Devices (tablets, 768-991px) */
+@media (min-width: 768px) {}
+
+/* Large Devices (desktops, 992-1199px) */
+@media (min-width: 992px) {}
+
+/* Extra Large Devices (large desktops, 1200+px) */
+@media (min-width: 1200px) {}

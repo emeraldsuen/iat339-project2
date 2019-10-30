@@ -127,8 +127,16 @@ INTERACTIVE ELEMENTS -------------------
 }
 
 /* Real Navgation bar */
-@media (min-width: 500px) {
+/* LARGE SCREEN - hide collapsible nav */
+@media (min-width: 576px) {
   summary {
+    display: none;
+  }
+}
+
+/* SMALL SCREEN - hide nav bar */
+@media (max-width: 575px) {
+  .nav-bar-original {
     display: none;
   }
 }
@@ -344,7 +352,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
 
 .cart-icon {
   float: right;
-  width: 6.5em;
+  width: 2em;
 }
 
 .search-bar {
