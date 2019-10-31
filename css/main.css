@@ -593,6 +593,17 @@ span.price {
   margin: 1em;
 }
 
+.checkout-right h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: normal;
+  font-weight: bold;
+}
+
 /* CART ALIGNMENT */
 .cart-align-top {
   display: flex;
@@ -675,6 +686,22 @@ span.price {
     width: 100%;
     /* background-color: red; */
     display: inline-block;
+  }
+
+  .modal-content .checkout-content {
+    text-align: center;
+  }
+
+  .modal-content .checkout-left {
+    margin: 1em 1em 0em 1em;
+  }
+
+  .modal-content .checkout-right {
+    margin: 0em 1em 1em 1em;
+  }
+
+  .modal-content .checkout-content {
+    padding: 0em;
   }
 }
 
