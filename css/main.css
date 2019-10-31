@@ -241,6 +241,40 @@ i {
   box-sizing: border-box;
 }
 
+@media (max-width: 435px) {
+  .search-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 435px) {
+  .collapse-search {
+    display: none;
+  }
+}
+
+.collapse-search details>summary {
+  width: 1em;
+}
+
+.collapse-search summary {
+  display: inline-block;
+  list-style: none;
+}
+
+.collapse-search summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapse-search div {
+  padding: 0.5em;
+}
+
+.collapse-search img {
+  margin-top: 0.25em;
+  padding: 2em;
+}
+
 .cart-icon {
   float: right;
   width: 2em;
@@ -263,6 +297,10 @@ i {
   .nav-bar-original {
     display: none;
   }
+
+  .search-bar {
+    display: hidden;
+  }
 }
 
 /* collapsible menu */
@@ -278,7 +316,7 @@ i {
   width: 100%;
   padding: 0;
   margin: 0;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .nav-details li {
@@ -291,6 +329,14 @@ i {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.nav-details details>summary {
+  list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
 }
 
 /* regular navigation bar */
