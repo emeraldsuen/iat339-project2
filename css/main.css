@@ -13,10 +13,9 @@ a {
   color: #ad1d1d;
 }
 
-.content {
+/* .content {
   padding: 2rem;
-}
-
+} */
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
@@ -402,14 +401,29 @@ i {
 /* holds each product item */
 .card2 {
   flex-basis: 25em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  max-width: 225px;
   background-color: #f2f2f2;
   text-align: center;
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-top: 1em;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .card2 {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .card2 {
+    max-width: 275px;
+  }
 }
 
 .card2 button {
@@ -424,6 +438,10 @@ i {
   width: 100%;
   font-size: 18px;
   font-family: inherit;
+}
+
+.card2 img {
+  width: 100%;
 }
 
 .card2 button:hover {
@@ -688,6 +706,51 @@ span.price {
 .contact-container {
   width: 80%;
   margin: 0 auto;
+}
+
+.mission-statement {
+  font-size: 1.25em;
+  margin-left: 1em;
+  font-style: italic;
+}
+
+.section-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.feedback-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5em;
+  width: fit-content;
+  /* background-image: linear-gradient(#f2f2f2, #dbd897); */
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.feedback-container input:hover {
+  /* background-color: #f7adad; */
+  border-style: solid;
+  border-color: #ad1d1d;
+}
+
+.feedback-container input {
+  box-shadow: none;
+  padding: 0.5em;
+  margin-top: 0.25em;
+}
+
+.feedback-container textarea {
+  padding: 0.5em;
+  margin-top: 0.25em;
+  font-family: inherit;
 }
 
 /* buttons in about page*/
