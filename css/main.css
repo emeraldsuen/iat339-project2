@@ -361,8 +361,9 @@ i {
 */
 /* HOME STYLING */
 /* carousel styling */
-.w3-content w3-display-container {
+.slideshow{
   width: 100%;
+  position: relative;
 }
 
 .mySlides {
@@ -371,11 +372,19 @@ i {
 
 .left-arrow {
   float: left;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 1em;
   cursor: pointer;
 }
 
 .right-arrow {
   float: right;
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 1em;
   cursor: pointer;
 }
 
