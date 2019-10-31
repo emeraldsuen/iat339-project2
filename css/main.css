@@ -489,7 +489,7 @@ details>summary::-webkit-details-marker {
 }
 
 .card2 button {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   border: none;
   outline: 0;
   padding: 12px;
@@ -1029,6 +1029,28 @@ div.footer .context {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+.product-more{
+  padding-top: 3em;
+  position: relative;
+  /* padding-left: 44%; */
+}
+
+.product-more button{
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  outline: 0;
+  padding: 2em;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: inherit;
+  margin: auto;
 }
 
 /* END OF FOOTER STYLING */
