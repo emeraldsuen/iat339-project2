@@ -952,6 +952,19 @@ div.footer .context {
   opacity: 0.7;
 }
 
+.button2 {
+  cursor: pointer;
+  color: #ad1d1d;
+  text-decoration: underline;
+}
+
+.button2:hover {
+  background-color: #ad1d1d;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .product-container button2 {
   color: #ad1d1d;
   text-decoration: underline;
