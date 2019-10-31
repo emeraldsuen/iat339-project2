@@ -126,8 +126,34 @@ INTERACTIVE ELEMENTS -------------------
   background-color: #111;
 }
 
-/* Real Navgation bar */
-/* .navbar1 ul {
+.nav-details {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-details ul {
+  list-style-type: none;
+  background-color: #333;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.nav-details li {
+  float: none;
+}
+
+.nav-details li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original ul {
   z-index: 1;
   list-style-type: none;
   margin: 0;
@@ -139,18 +165,18 @@ INTERACTIVE ELEMENTS -------------------
   width: 100%;
 }
 
-.navbar1 li {
+.nav-bar-original li {
   float: left;
 }
 
-.navbar1 li a {
+.nav-bar-original li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.navbar1 li a, .dropbtn {
+.nav-bar-original li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -158,15 +184,15 @@ INTERACTIVE ELEMENTS -------------------
   text-decoration: none;
 }
 
-.navbar1 li a:hover, .dropdown:hover .dropbtn {
+.nav-bar-original li a:hover, .dropdown:hover .dropbtn {
   background-color: #111;
 }
 
-.navbar1 li.dropdown {
+.nav-bar-original li.dropdown {
   display: inline-block;
 }
 
-.navbar1 .dropdown-content {
+.nav-bar-original .dropdown-content {
   display: none;
   position: fixed;
   background-color: #f9f9f9;
@@ -175,7 +201,7 @@ INTERACTIVE ELEMENTS -------------------
   z-index: 1;
 }
 
-.navbar1 .dropdown-content a {
+.nav-bar-original .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -183,17 +209,18 @@ INTERACTIVE ELEMENTS -------------------
   text-align: left;
 }
 
-.navbar1 .dropdown-content a:hover {
+.nav-bar-original .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
-.navbar1 .dropdown:hover .dropdown-content {
+.nav-bar-original .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.navbar1 .navbar1 li a:hover:not(.active) {
+.nav-bar-original .nav-bar-original li a:hover:not(.active) {
   background-color: #111;
-} */
+}
+
 .navbar1 img {
   padding: 2em;
 }
@@ -201,14 +228,6 @@ INTERACTIVE ELEMENTS -------------------
 .navbar1 {
   width: 80%;
   margin: 0 auto;
-}
-
-nav.navbar.navbar-expand-sm.navbar-light {
-  z-index: 1;
-  padding: 0;
-  position: absolute;
-  left: 10px;
-  top: 10px;
 }
 
 .header-box {
@@ -225,7 +244,6 @@ nav.navbar.navbar-expand-sm.navbar-light {
 }
 
 .topB {
-  /* margin-left: 35%; */
   vertical-align: middle;
 }
 
@@ -233,7 +251,6 @@ nav.navbar.navbar-expand-sm.navbar-light {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* padding-bottom: 1em; */
   flex-wrap: wrap;
 }
 

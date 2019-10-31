@@ -1,20 +1,3 @@
-<!--
-bootstrap media queries values
-
-<div>
-  <details>
-    <summary>hamburger icon</summary>
-    <div><a href=""></a>
-
-  </details>
-  <div>other content</div> <-- add padding to leave space for details when details is pos: fixed
-</div>
-
-detail css: position: fixed;
-
- -->
-
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -26,19 +9,7 @@ detail css: position: fixed;
   <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
   <title>Home|MAGPUL</title>
 
-  <!-- Navbar - Hamburger -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Homepage banner -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <!-- unknown -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-  <!-- <link rel="stylesheet" media="(min-width:500px)" href="css/main-max.css"> -->
-  <link rel="stylesheet" href="css/main-max.css">
-  <!-- <link rel="stylesheet" media="(max-width:500px)" href="css/main-min.css"> -->
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 
@@ -57,7 +28,7 @@ detail css: position: fixed;
         <!-- Search Bar -->
         <div class="topB">
           <div class="search-bar">
-            <label for="input">Search the site: </label>
+            <label for="input">Search: </label>
             <input id="input" type="text">
           </div>
 
@@ -72,11 +43,11 @@ detail css: position: fixed;
           <summary><img src="img/hamburger.png"></summary>
           <div class="nav-details">
             <ul>
-              <li><a href="home.html">Home</a></li>
+              <li><a class="active" href="home.html">Home</a></li>
               <li><a href="product.html">Products</a></li>
               <li><a href="checkout.html">Checkout</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a class="active" href="events.html">Events</a></li>
+              <li><a href="events.html">Events</a></li>
             </ul>
           </div>
         </details>
@@ -85,50 +56,27 @@ detail css: position: fixed;
         <!-- NAV BAR -->
         <div class="nav-bar-original">
           <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a class="active" href="events.html">Events</a></li>
-          </ul>
-        </div>
-      </nav>
-
-
-      <!-- <nav class="navbar navbar-expand-sm navbar-light">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
             <li><a class="active" href="home.html">Home</a></li>
             <li><a href="product.html">Products</a></li>
             <li><a href="checkout.html">Checkout</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
             <li><a href="events.html">Events</a></li>
           </ul>
         </div>
-      </nav> -->
+      </nav>
     </div>
   </header>
 
   <div class="banner">
-
     <div class="w3-content w3-display-container">
       <img class="mySlides" src="img/img0.jpg" style="width:100%">
       <img class="mySlides" src="img/img3.jpg" style="width:100%">
       <img class="mySlides" src="img/img5.jpg" style="width:100%">
-      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <div style="width:100%">
+        <div class="left-arrow" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="right-arrow" onclick="plusDivs(1)">&#10095;</div>
       </div>
     </div>
-
   </div>
 
   <div class="product-section">

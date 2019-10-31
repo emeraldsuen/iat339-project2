@@ -1,7 +1,4 @@
-/*
-STYLE GUIDE STYLING
-Default styling for the style guide
-*/
+/* DEFAULT STYLING */
 @font-face {
   font-family: 'Nova Regular';
   src: url('../fonts/Mark Simonson  Proxima Nova Regular.otf') format('opentype');
@@ -32,6 +29,12 @@ a {
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
+}
+
+.element2 a:hover {
+  background-color: white;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .element3 {
@@ -107,338 +110,23 @@ code {
   display: block;
 }
 
-/*
-INTERACTIVE ELEMENTS -------------------
-*/
-/* Styling for the navigation button */
-.button-nav {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  padding: 14px 16px;
-  color: white;
-  background-color: #333;
-  text-decoration: none;
-  transition-property: background-color;
-  /* transition-duration: 0.5s; */
-}
-
-.button-nav:hover, .button-nav:focus {
-  background-color: #111;
-}
-
-/* Real Navgation bar */
-.navbar1 ul {
-  z-index: 1;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* THIS IS FOR STICKY NAV */
-  /* position: fixed; */
-  top: 0;
-  width: 100%;
-}
-
-.navbar1 li {
-  float: left;
-}
-
-.navbar1 li a {
-  display: block;
-  /* color: white; */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar1 li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar1 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #111;
-}
-
-.navbar1 li.dropdown {
-  display: inline-block;
-}
-
-.navbar1 .dropdown-content {
-  display: none;
-  position: fixed;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.navbar1 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.navbar1 .dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.navbar1 .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.navbar1 .navbar1 li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.navbar1 img {
-  padding: 2em;
-}
-
-.navbar1 {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.topA {
-  position: absolute;
-}
-
-.topB {
-  padding-top: 0.5em;
-  margin-left: 35%;
-}
-
-.cart-icon {
-  float: right;
-}
-
-.search-bar {
-  /* position: absolute; */
-  display: inline-block;
-  margin: 1em auto;
-  /* float: right; */
-}
-
-.active {
-  background-color: #ad1d1d;
-}
-
-.product-section {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* navgation bar sample  */
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #ad1d1d;
-}
-
-.banner {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.banner img {
-  width: 100%;
-}
-
-/* Product/service listing section */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  background-color: #f2f2f2;
-  margin: auto;
-  text-align: center;
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-  /* display: inline-block; */
-  /* float: right; */
-}
-
-.card button {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #ad1d1d;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  font-family: 'Nova Regular';
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
-.col-25 {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-}
-
-span.price {
-  float: right;
-  color: grey;
-}
-
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}
-
-/* payment section */
-.container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0.5em;
-  max-width: 100%;
-  /* background-image: linear-gradient(#f2f2f2, #dbd897); */
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-}
-
 a:hover {
   background-color: #ad1d1d;
   color: white;
   text-decoration: none;
 }
 
-.element2 a:hover {
-  background-color: white;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
-
-.info {
-  margin-top: 30px;
-  padding: 50px 30px 0 20px;
-  max-width: 500px;
-}
-
-/* The title of the form */
-.info label {
-  color: #395870;
-  display: block;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-/* The input bar of the form */
-.info input {
-  background: #fff;
-  border: 1px solid #c6c7cc;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
-  color: #636466;
-  padding: 6px;
-  margin-top: 6px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-/* hover on the input to focus and change the color to red */
-.info input:hover {
-  background-color: #ff91a1;
-}
-
-/* Buttons for payment form and checkout cart */
-.button {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #4CAF50;
-  /* red */
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  font-family: 'Nova Regular';
-}
-
-.button3 {
-  background-color: #ad1d1d;
-  color: white;
-}
-
-.button3:hover {
-  background-color: #f7adad;
-  color: white;
-  /* text-transform: uppercase; */
-}
-
-/* submit/reset button section - disabled button */
-.button3d {
-  background-color: #f7adad;
-  color: white;
-}
-
-/* input changes color when hover in container */
-.container input:hover {
-  /* background-color: #f7adad; */
+/* All of the input with red border */
+input:hover {
   border-style: solid;
   border-color: #ad1d1d;
 }
 
-.container input:focus {
-  /* background-color: #f7adad; */
+/* All text area with red border  */
+textarea:hover {
   border-style: solid;
   border-color: #ad1d1d;
-}
-
-.container input {
-  box-shadow: none;
-  padding: 0.5em;
-  margin-top: 0.25em;
+  border-width: 2px;
 }
 
 div.palette {
@@ -476,45 +164,456 @@ div.desc {
   font-family: 'Nova Regular';
 }
 
-.containergrid {
-  /* Set the .container class to display as a flexbox,
-  and to wrap flexbox items responsively. */
+i {
+  max-width: 300px;
+  height: 250px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1em;
+}
+
+/* END OF DEFAULT STYLING */
+/*
+
+
+
+
+
+*/
+/* HEADER STYLING */
+/* header container */
+.navbar1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar1 img {
+  padding: 2em;
+}
+
+/* logo/search bar/cart container */
+.header-box {
   display: flex;
+  justify-content: space-between;
 }
 
-.containergrid .block {
-  flex-wrap: wrap;
-  height: 200px;
-  /* Set every element to use the border-box model. */
-  border: 2px solid black;
-  /* Set the .block class to grow as needed,
-  as well as to have a basis of 15em. */
-  flex-grow: 1;
-  flex-basis: 15em;
+/* logo container */
+.topA {
+  /* position: absolute; */
+  width: fit-content;
 }
 
-.containergrid .block p {
-  padding: 0.5rem;
+.topA a:hover {
+  background-color: white;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 
-.containergrid .block:nth-of-type(1) {
+/* moves header-box into two lines when resized*/
+@media (max-width: 815px) {
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .topA {
+    margin: 0 auto;
+  }
+}
+
+/* search bar/cart container */
+.topB {
+  /* padding-top: 0.5em; */
+  /* margin-left: 35%; */
+  float: right;
+}
+
+.search-bar {
+  /* position: absolute; */
+  display: inline-block;
+  margin: 1em auto;
+  padding-top: 1.25em;
+  /* float: right; */
+}
+
+.search-bar input {
+  padding: 0.25em 0.5em;
+  box-sizing: border-box;
+}
+
+.cart-icon {
+  float: right;
+  width: 2em;
+}
+
+/* NAVIGATION BAR */
+.active {
   background-color: #ad1d1d;
 }
 
-.containergrid .block:nth-of-type(2) {
-  background-color: #f7adad;
+/* LARGE SCREEN - hide collapsible nav */
+@media (min-width: 576px) {
+  summary {
+    display: none;
+  }
 }
 
-.containergrid .block:nth-of-type(3) {
+/* SMALL SCREEN - hide nav bar */
+@media (max-width: 575px) {
+  .nav-bar-original {
+    display: none;
+  }
+}
+
+/* collapsible menu */
+.nav-details {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-details ul {
+  list-style-type: none;
+  background-color: #333;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.nav-details li {
+  float: none;
+}
+
+.nav-details li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* regular navigation bar */
+.nav-bar-original ul {
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar-original li {
+  float: left;
+}
+
+.nav-bar-original li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-original li a:hover, .dropdown:hover .dropbtn {
   background-color: #111;
 }
 
-.containergrid .block:nth-of-type(4) {
-  background-color: #f2f2f2;
+.nav-bar-original .dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
-/* The container */
+.nav-bar-original .nav-bar-original li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* END OF HEADER STYLING */
+/*
+
+
+
+ */
+/* BANNER STYLING (image on top of pages) */
+.banner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* END OF BANNER STYLING */
+/*
+
+
+
+*/
+/* HOME STYLING */
+/* carousel styling */
+.w3-content w3-display-container {
+  width: 100%;
+}
+
+.mySlides {
+  display: none
+}
+
+.left-arrow {
+  float: left;
+  cursor: pointer;
+}
+
+.right-arrow {
+  float: right;
+  cursor: pointer;
+}
+
+.product-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* END OF HOME STYLING */
+/*
+
+
+
+ */
+/* PRODUCT LISTING STYLING */
+/* holds all product cards */
+.product-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* holds each product item */
+.card2 {
+  flex-basis: 25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.card2 button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ad1d1d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* END OF PRODUCT STYLING */
+/*
+
+
+
+ */
+/* CHECKOUT STYLING */
+/* checkout card containers */
+.container {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* margin: 1em; */
+  margin-bottom: 1em;
+  max-width: 100%;
+  /* background-image: linear-gradient(#f2f2f2, #dbd897); */
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.container input {
+  box-shadow: none;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  width: 90%;
+}
+
+/* input changes border when hover in container */
+.container input:hover {
+  /* background-color: #f7adad; */
+  border-style: solid;
+  border-color: #ad1d1d;
+}
+
+.container hr {
+  border-top: 1px solid #ccc !important;
+}
+
+.checkout-content {
+  width: 80%;
+  /* padding-top: 1em; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* display: block; */
+}
+
+.checkout-left {
+  width: 70%;
+  /* background-color: blue; */
+  display: inline-block;
+  margin: 1em;
+}
+
+.checkout-right {
+  width: 30%;
+  /* background-color: red; */
+  display: inline-block;
+  margin: 1em;
+}
+
+/* CART ALIGNMENT */
+.cart-align-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-image {
+  width: 15%;
+  padding: 0.5em;
+  padding-left: 0;
+  min-width: 3em;
+}
+
+.cart-image img {
+  width: 100%;
+}
+
+.cart-text {
+  padding: 0.5em;
+  flex-grow: 2;
+}
+
+.cart-price {
+  float: right;
+  padding: 0.5em;
+  padding-right: 0;
+  color: grey;
+  font-size: 22px;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.payment-left {
+  width: 50%;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.payment.left input {
+  -webkit-appearance: none;
+  box-shadow: inset 0px 0px 0px 0px red;
+}
+
+.payment-right {
+  width: 50%;
+  margin-right: 1em;
+  margin-left: 1em;
+  /* text-align: right; */
+}
+
+.payment-right p {
+  text-align: left;
+}
+
+/* RESPONSIVE CHECKOUT LAYOUT */
+/* LARGE */
+@media (max-width: 54em) {
+  .checkout-content {
+    width: 80%;
+    padding-top: 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    display: block;
+  }
+
+  .checkout-left {
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+  }
+
+  .checkout-right {
+    width: 100%;
+    /* background-color: red; */
+    display: inline-block;
+  }
+}
+
+/* SMALL */
+@media (max-width: 40em) {
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .payment-left {
+    width: 100%;
+  }
+
+  .payment.left input {
+    -webkit-appearance: none;
+    box-shadow: inset 0px 0px 0px 0px red;
+  }
+
+  .payment-right {
+    width: 100%;
+  }
+}
+
+/* appear is used in checkout js*/
+#appear {
+  display: none;
+}
+
+/* radio button */
 .radio {
   display: block;
   position: relative;
@@ -579,188 +678,54 @@ div.desc {
   background: white;
 }
 
-/* Product Page */
-.product-container {
-  /* to hold all product cards */
-  display: flex;
-  flex-flow: row wrap;
-  /* width: 80%; */
-  /* justify-content: space-between; */
-  justify-content: start;
-}
+/* END OF CHECKOUT STYLING */
+/*
 
-/* .product-container::after {
-  content: "";
-  flex: auto;
-  justify-content: start;
-} */
-i {
-  max-width: 300px;
-  height: 250px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-top: 1em;
-}
 
-.card2 {
-  /* all the commented out stuff was the stuff that gary tried out */
-  /* he suggested using media queries when the flexbox moves things to another line */
-  /* ill try that out on saturday and see where it goes -karmen */
-  /* flex-grow: 1; */
-  flex-basis: 25em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  background-color: #f2f2f2;
-  text-align: center;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-top: 1em;
-  padding: 1em;
-}
 
-.card2 button {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #ad1d1d;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  /* font-family: 'Oswald Regular', sans-serif; */
-  font-family: inherit;
-}
-
-.card2 button:hover {
-  opacity: 0.7;
-}
-
-#appear {
-  display: none;
-}
-
-.checkout-content {
-  width: 80%;
-  padding-top: 2em;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  /* display: block; */
-}
-
-.checkout-left {
-  width: 70%;
-  /* background-color: blue; */
-  display: inline-block;
-}
-
-.checkout-right {
-  width: 30%;
-  /* background-color: red; */
-  display: inline-block;
-}
-
-/* CART ALIGNMENT */
-.cart-align-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cart-image {
-  width: 15%;
-  padding: 0.5em;
-  padding-left: 0;
-  min-width: 3em;
-}
-
-.cart-image img {
-  width: 100%;
-}
-
-.cart-text {
-  padding: 0.5em;
-  flex-grow: 2;
-}
-
-.cart-price {
-  float: right;
-  padding: 0.5em;
-  padding-right: 0;
-  color: grey;
-  font-size: 22px;
-}
-
-.payment-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.payment-left {
-  width: 50%;
-}
-
-.payment.left input {
-  -webkit-appearance: none;
-  box-shadow: inset 0px 0px 0px 0px red;
-}
-
-.payment-right {
-  width: 50%;
-}
-
-@media (max-width: 54em) {
-  .checkout-content {
-    width: 80%;
-    padding-top: 2em;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    display: block;
-  }
-
-  .checkout-left {
-    width: 100%;
-    /* background-color: blue; */
-    display: inline-block;
-  }
-
-  .checkout-right {
-    width: 100%;
-    /* background-color: red; */
-    display: inline-block;
-  }
-}
-
-@media (max-width: 40em) {
-  .payment-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .payment-left {
-    width: 100%;
-  }
-
-  .payment.left input {
-    -webkit-appearance: none;
-    box-shadow: inset 0px 0px 0px 0px red;
-  }
-
-  .payment-right {
-    width: 100%;
-  }
-}
-
+ */
+/* ABOUT STYLING */
 .contact-container {
   width: 80%;
   margin: 0 auto;
 }
 
+/* buttons in about page*/
+.button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Nova Regular';
+}
+
+.button3 {
+  background-color: #ad1d1d;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #f7adad;
+  color: white;
+  /* text-transform: uppercase; */
+}
+
+/* END OF ABOUT STYLING */
+/*
+
+
+
+ */
+/* EVENT STYLING */
 .event-container {
   width: 80%;
   margin: 0 auto;
@@ -798,17 +763,39 @@ i {
   width: 100%;
 }
 
+/* END OF EVENT STYLING */
+/*
+
+
+
+ */
 /* FOOTER */
 div.footer {
   margin-top: 5em;
   position: absolute;
   left: 0;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 6em;
+  padding-bottom: 6em;
   width: 100%;
   background-color: #ad1d1d;
   color: white;
-  text-align: center;
+  text-align: left;
+}
+
+div.footer .flex-container {
+  display: flex;
+}
+
+div.footer .flex-container>div {
+  padding: 0em 4em 1em 4em;
+}
+
+div.footer a {
+  color: white;
+}
+
+div.footer .context {
+  padding: 1em 4em 0em 4em;
 }
 
 /* The Modal (background) */
@@ -880,7 +867,6 @@ div.footer {
 
 .product-container button2 {
   color: #ad1d1d;
-  ;
   text-decoration: underline;
 }
 
@@ -890,3 +876,131 @@ div.footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* END OF FOOTER STYLING */
+/*
+
+
+
+ */
+/* OLD STYLEGUIDE CONTENT */
+.button-nav {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 14px 16px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  transition-property: background-color;
+  /* transition-duration: 0.5s; */
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #111;
+}
+
+/* navgation bar sample  */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* used for checkout cart */
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.info {
+  margin-top: 30px;
+  padding: 50px 30px 0 20px;
+  max-width: 500px;
+}
+
+/* The title of the form */
+.info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* The input bar of the form - STYLE GUIDE*/
+.info input {
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1); */
+  padding: 6px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.containergrid {
+  /* Set the .container class to display as a flexbox,
+  and to wrap flexbox items responsively. */
+  display: flex;
+}
+
+.containergrid .block {
+  flex-wrap: wrap;
+  height: 200px;
+  /* Set every element to use the border-box model. */
+  border: 2px solid black;
+  /* Set the .block class to grow as needed,
+  as well as to have a basis of 15em. */
+  flex-grow: 1;
+  flex-basis: 15em;
+}
+
+.containergrid .block p {
+  padding: 0.5rem;
+}
+
+.containergrid .block:nth-of-type(1) {
+  background-color: #ad1d1d;
+}
+
+.containergrid .block:nth-of-type(2) {
+  background-color: #f7adad;
+}
+
+.containergrid .block:nth-of-type(3) {
+  color: white;
+  background-color: #111;
+}
+
+.containergrid .block:nth-of-type(4) {
+  background-color: #f2f2f2;
+}
+
+/* END OF OLD STYLEGUIDE CONTENT */
