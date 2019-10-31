@@ -190,10 +190,11 @@ i {
   padding: 2em;
 }
 
-.navbar1 .search-bar img{
+.navbar1 .search-bar img {
   padding: 0em 0em 0em 0.2em;
 }
-.navbar1 .search-bar a{
+
+.navbar1 .search-bar a {
   background-color: transparent;
 }
 
@@ -294,7 +295,11 @@ i {
 
 /* LARGE SCREEN - hide collapsible nav */
 @media (min-width: 576px) {
-  summary {
+  .nav-details, summary {
+    display: none;
+  }
+
+  .nav-details, details {
     display: none;
   }
 }
@@ -673,7 +678,6 @@ span.price {
   }
 }
 
-
 @media (max-width: 40em) {
   .payment-container {
     display: flex;
@@ -1031,13 +1035,13 @@ div.footer .context {
   cursor: pointer;
 }
 
-.product-more{
+.product-more {
   padding-top: 3em;
   position: relative;
   /* padding-left: 44%; */
 }
 
-.product-more button{
+.product-more button {
   display: block;
   border-style: solid;
   border-width: 1px;
